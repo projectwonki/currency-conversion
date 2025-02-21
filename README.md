@@ -64,9 +64,14 @@ POST /api/convert
 ```json
 {
     "success": true,
-    "message": "Currency converted successfully.",
-    "exchange_rate": 3.10,
-    "converted_amount": 310.00
+    "message": "Currency converted successfully",
+    "data": {
+        "amount": 100,
+        "from": "SGD",
+        "to": "PLN",
+        "exchange_rate": "2.9700",
+        "converted_amount": 297
+    }
 }
 ```
 
